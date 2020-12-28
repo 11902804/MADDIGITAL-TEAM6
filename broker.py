@@ -10,7 +10,7 @@ def cliShow(aText="no parameter was fed in"):
 
 context = zmq.Context()
 
-push = context.socket(zmq.PUSH)  # Socket facing out - THE zmq.PUSH ARCHETYPE is a right-enough one
+push = context.socket(zmq.PUB)  # Socket facing out - THE zmq.PUSH ARCHETYPE is a right-enough one
 push.bind("tcp://*:5556")  # push acquires all ports 5556 to be PUSH-served
 push.setsockopt(zmq.LINGER, 0)  # .SET always explicitly, even if "defaults" promise
 
@@ -20,9 +20,9 @@ pull.setsockopt(zmq.LINGER, 0)  # .SET always explicitly, even if "defaults" pro
 
 try:
     while True:
-
         if (0 == pull.poll(ms_TO_WAIT_IN_POLL, zmq.POLLIN)):
-            cliShow("No message arrived yet")  # CLI - GUI STUB print()
+            # cliShow("No message arrived yet")  # CLI - GUI STUB print()
+            dud = 1
         else:
             msg = pull.recv(zmq.NOBLOCK)  # /NEVER/ USE A BLOCKING .recv()
             cliShow("test")  # CLI - GUI STUB print()
