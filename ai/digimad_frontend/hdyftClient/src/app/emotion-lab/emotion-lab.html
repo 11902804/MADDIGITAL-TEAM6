@@ -1,0 +1,70 @@
+<div class="colorDropdown card mt-3 emotionsCard">
+  <h5 class="card-header">Emotions Lab</h5>
+<!--   <button
+  (click)="loadPredefinedColorsForEmotion(4);"
+  >load colors</button> -->
+  <table aria-hidden="true" class="mt-3 mb-3">
+    <thead>
+      <tr>
+        <th class="card-text th" scope="col">Emotion</th>
+        <th class="card-text th" scope="col">Color</th>
+        <th class="card-text th" scope="col">Predefined color</th>
+      </tr>
+    </thead>
+    <tbody class="card-body">
+      <tr *ngFor="let emotion of emotions; let i = index">
+        <td class="td emotionName">{{emotion}}</td>
+        <td class="td">
+          <div class="colorDiv" id="{{'colorDiv1.'+ i}}"></div>
+
+          <div class="colorDiv" id="{{'colorDiv2.'+ i}}"></div>
+
+          <div class="colorDiv" id="{{'colorDiv3.'+ i}}"></div>
+        </td>
+        <td class="td">
+          <div>
+            <label class="colorLabel" id="{{'label1.'+ i}}">test</label>
+            <select
+              class="colorSelection form-control"
+              id="{{'colorSelect1.'+ i}}"
+              (change)="colorChange($event.target.id,$event.target.value)"
+            >
+            <option disabled selected value> Select a new color</option>
+              <option *ngFor="let color of colors" [ngValue]="color">
+                {{color}}
+              </option>
+            </select>
+          </div>
+
+          <div>
+            <label class="colorLabel"  id="{{'label2.'+ i}}">test</label>
+            <select
+              class="colorSelection form-control"
+              id="{{'colorSelect2.'+ i}}"
+              (change)="colorChange($event.target.id,$event.target.value)"
+            >
+            <option disabled selected value> Select a new color</option>
+              <option *ngFor="let color of colors" [ngValue]="color">
+                {{color}}
+              </option>
+            </select>
+          </div>
+
+          <div>
+            <label class="colorLabel" id="{{'label3.'+ i}}">test</label>
+            <select
+              class="colorSelection form-control"
+              id="{{'colorSelect3.'+ i}}"
+              (change)="colorChange($event.target.id,$event.target.value)"
+            >
+            <option disabled selected value> Select a new color</option>
+              <option *ngFor="let color of colors" [ngValue]="color">
+                {{color}}
+              </option>
+            </select>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

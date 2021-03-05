@@ -1,0 +1,36 @@
+<div class="newColorDiv">
+    <form class="newColorForm">
+        <div class="card-header">
+            <label>name</label>
+            <input id="namePredefined">
+        </div>
+        <div id="color1" class="colorDiv">
+            first color
+        </div>
+
+        <div id="color2" class="colorDiv">
+            second color
+        </div>
+        
+        <div id="color3" class="colorDiv">
+            third color
+        </div>
+        <input
+        id= "newColorPicker" 
+        class="btn btn-sm"
+        [value]="color"
+        [style.background]="color"
+        [colorPicker]="color"
+        [cpPosition]="'bottom'"
+        (colorPickerChange)="color=$event"
+        />
+        <div>
+            <button type="button" id="newColorButton" class="btn btn-outline-success" (click)="colorChoose()">Choose Color</button>
+            <button type="button" class="btn btn-outline-success" (click)="resetChoice()">reset</button>
+            <button type="button" id="saveButton" (click)="saveColor()" disabled=true>Save</button>
+
+
+        </div>
+
+    </form>
+</div>

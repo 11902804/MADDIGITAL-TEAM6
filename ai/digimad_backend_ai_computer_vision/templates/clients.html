@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>clients</title>
+    </head>
+<body>
+<div>
+    <h3>All connected clients:</h3>
+    <ul>
+    {%for client in clients%} 
+    <li>SID: {{ client.get_sid() }}</li>
+    <li>WID: {{ client.get_wid() }}</li><br/>
+    {%endfor%}</ul> 
+</div>
+</body>
+</html>

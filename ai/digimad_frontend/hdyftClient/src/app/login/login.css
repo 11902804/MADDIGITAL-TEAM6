@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+  }
+.loginFormInput{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#logo{
+    width: 25rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#divItems{
+    display:block;
+    margin-top: 5rem;
+}
+#formItems{
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+#form{
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+}
+#inputPassword, #staticEmail{
+    background-color: white;
+    color: black;
+    width: 25rem;
+    padding-left: 10px;
+}
+label{ 
+    text-align: right;
+    width: 20rem;
+    padding-right: 0px;
+    padding-left: 8px;
+    color: #8BC249;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+.loginButton{
+    text-align: center;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+}
+.loading {
+    display: block;
+    width: 80px;
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.error{
+    color: red;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logout {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 600px) {
+    label{ 
+        text-align: left;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    #logo{
+        width: 23rem;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #inputPassword, #staticEmail{
+        width: 22rem;
+    }
+  }

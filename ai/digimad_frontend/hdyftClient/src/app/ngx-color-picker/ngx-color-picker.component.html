@@ -1,0 +1,64 @@
+<div class="card mt-3 colorCard">
+  <h5 class="card-header">Color Lab</h5>
+  <div class="card-body">
+    <p class="card-text">
+      Use this section to try out your lights colors. You can save the colors
+      you like and then apply them in the next section.
+    </p>
+
+    <label
+      >Click here to select a color:
+      <input
+        class="btn btn-sm"
+        [value]="color"
+        [style.background]="color"
+        [colorPicker]="color"
+        [cpPosition]="'bottom'"
+        [cpOutputFormat]="'hex'"
+        (colorPickerChange)="onChangeColor($event); color = $event"
+    /></label>
+
+    <div class="row justify-content-start">
+      <div class="col-sm-6 input-group mb-3">
+        <input
+          type="text"
+          [(ngModel)]="colorName"
+          class="form-control"
+          placeholder="Color name"
+          aria-label="Color name"
+          aria-describedby="basic-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-success"
+            (click)="changeSuccessMessage()"
+            type="button"
+          >
+            Save color
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- <p>
+      <button class="btn btn-outline-success" (click)="changeSuccessMessage()">
+        Save color
+      </button>
+    </p> -->
+    <ngb-alert
+      #selfClosingAlert
+      *ngIf="successMessage"
+      type="success"
+      (closed)="successMessage = ''"
+      >{{ successMessage }}
+    </ngb-alert>
+    <ngb-alert
+    #selfClosingErrorAlert
+    *ngIf="errorMessage"
+    type="warning"
+    class="alert alert-danger"
+    (closed)="errorMessage = ''"
+    >{{ errorMessage }}
+  </ngb-alert>
+  </div>
+</div>

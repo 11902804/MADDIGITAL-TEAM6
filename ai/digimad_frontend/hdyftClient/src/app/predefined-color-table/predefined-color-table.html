@@ -1,0 +1,48 @@
+<div class="predefinedTable card mt-3 colorsCard">
+  <h5 class="card-header">Predefined Colors</h5>
+  <div class="card-body">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="card-text th" scope="col">Name</th>
+          <th class="card-text th" scope="col">Color</th>
+          <th class="card-text th" scope="col">Hex</th>
+        </tr>
+      </thead>
+      <tbody id="predefinedColorTableBody">
+        <tr *ngFor="let color of colors ; let i = index">
+          <td class="td">
+            <input
+              id="{{'colorInput'+i}}"
+              class="colorInput colorNameInput"
+              type="text"
+              value="{{color}}"
+              (change)="nameIsChanged($event.target.id)"
+            />
+          </td>
+          <td class="td">
+            <div class="colorDiv" [ngStyle]="{'background-color':values[i]}">
+            </div>
+          </td>
+          <td class="td hex">
+              <h6 class="hexNa">{{values[i]}}</h6>
+          </td>
+          <button
+            class="btn btn-outline-success saveButton"
+            id="{{'saveButton'+i}}"
+            (click)="saveNewNames($event.target.id)"
+          >
+            Save Name
+          </button>
+          <button
+            class="btn btn-outline-danger deleteButton"
+            id="{{'deleteButton'+i}}"
+            (click)="deletePredefinedColor($event.target.id)"
+          >
+            delete
+          </button>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

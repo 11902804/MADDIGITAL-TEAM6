@@ -1,0 +1,46 @@
+<!-- <video
+  id="bgvid"
+  playsinline
+  autoplay
+  [muted]="true"
+  loop
+  src="\assets\particle-tree.mp4"
+  type="video/mp4"
+  poster="\assets\near-and-far.png"
+></video> -->
+
+<video
+  id="bgvid"
+  playsinline
+  autoplay
+  [muted]="true"
+  loop
+  src="\assets\particle-tree.mp4"
+  type="video/mp4"
+  poster="\assets\near-and-far.png"
+></video>
+<!-- <img src="\assets\cornField.png" /> -->
+<!-- <h1 class="display-1" style="color: rgb(255,255,255,0.2) ; text-align: center; margin:1.5rem; font-size: 7rem; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 100;
+text-shadow: 4px 8px 6px rgba(255, 255, 255, 0.15);">HOW DO YOU FEEL TODAY?</h1> -->
+<h1 class="display-1 headTitle">How do you feel today?</h1>
+
+<form ngNativeValidate action="enterId()" class="inputForm">
+  <label style="color: white; font-size: 1.25rem"></label>
+  <div class="input-group groupInput">
+    <input
+      id="idNumber"
+      type="number"
+      class="form-control input"
+      placeholder="Enter wristband id"
+      aria-label="Enter wristband id"
+      aria-describedby="basic-addon2"
+    />
+    <div class="input-group-append">
+      <a class="btn btn-outline-secondary continueButton" type="submit" (click)="saveWristbandId()" href="/user">Continue</a>
+    </div>
+  </div>
+</form>
+
+<div *ngIf="isLoggedIn$ | async; then logout else login"></div>
+<ng-template #logout><a class="btn loginButton" (click)="logoutUser()">Logout</a></ng-template>
+<ng-template #login><a class="btn loginButton" href="/login">Login</a></ng-template>

@@ -1,0 +1,53 @@
+.fullscreen {
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+img {
+    float: left;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    float: left;
+  }
+  
+svg {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.fillup {
+    background-color: #00B6FF;
+    position: fixed;
+    bottom: 0%;
+    min-width: 100%;
+    min-height: 30%;
+}
+
+a {
+    color: white;
+}
+
+.message {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: white;
+}

@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.colorCard{
+    width: 60rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+h5{
+    font-size: 1.25rem;
+    color: #8BC249;
+}
+
+@media only screen and (max-width: 1050px){
+    .colorCard{
+        width: 50rem;
+    }
+}
+@media only screen and (max-width: 993px){
+    .colorCard{
+        width: 45rem;
+    }
+}
+@media only screen and (max-width: 850px){
+    .colorCard{
+        width: 35rem;
+    }
+}
+@media only screen and (max-width: 660px){
+    .colorCard{
+        width: 25rem;
+    }
+}
+@media only screen and (max-width: 440px){
+    .colorCard{
+        width: 18rem;
+    }
+}

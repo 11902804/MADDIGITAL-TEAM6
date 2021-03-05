@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" *ngIf="isLoggedIn$ | async">
+  <a class="navbar-brand" href="#"><img src="assets/logo_small.png" alt="logo" id="logo"/></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-link active" href="/"
+        >Home <span class="sr-only">(current)</span></a
+      >
+      <a class="nav-link" href="/lab">Lab</a>
+      <a class="nav-link" href="/predefined">Predefined colors</a>
+      <a class="nav-link" href="/simulation">Simulation</a>
+      <a class="nav-link" href="/camera">Camera</a>
+      <p class="nav-link">Hi, {{ username$ | async }}!</p>
+      <a class="nav-link" (click)="logout()">Logout</a>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+.display-1 {
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  /* color: rgb(255, 255, 255, 0.2); */
+  /* color: #098041; */
+  /* color: #8bc249; */
+  color: rgba(245, 245, 245, 0.8);
+  text-align: center;
+  margin-top: 12rem;
+  font-size: 4rem;
+  text-shadow: 8px 1px 20px #8bc249;
+}
+.loginButton {
+  background-color: transparent;
+  color: rgba(245, 245, 245, 0.8);
+  text-align: center;
+  width: fit-content;
+  float: right;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  z-index: 1;
+  align-content: bottom;
+}
+.loginButton:hover {
+  color: #8bc249;
+  font-size: large;
+}
+
+.continueButton {
+  position: relative;
+  background-color: rgba(139, 194, 73, 0.2);
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+.continueButton:hover {
+  border-style: hidden;
+  background-color: transparent;
+  z-index: 1;
+  position: relative;
+  color: #8bc249;
+  font-size: large;
+}
+.enterIdBottonAddOn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+form {
+  text-align: center;
+  margin-top: 5rem;
+  z-index: 1;
+  position: relative;
+}
+input {
+  color: black;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  background-color: rgba(245, 245, 245, 0.4);
+  font-size: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 8px;
+  padding-left: 15px;
+  z-index: 1;
+  position: relative;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+  z-index: 1;
+  position: relative;
+  color: black;
+  background-color: transparent;
+  font-size: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 8px;
+  padding-left: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  z-index: 1;
+  position: relative;
+  color: white;
+  background-color: transparent;
+  font-size: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 8px;
+  padding-left: 15px;
+  z-index: 1;
+  position: relative;
+}
+
+input:focus {
+  border: none;
+  box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+}
+h1 {
+  position: relative;
+}
+img {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 0%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  background-size: cover;
+  opacity: 40%;
+}
+.inputForm{
+  width: 25rem;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+@media only screen and (max-width: 450px){
+  .headTitle{
+    font-size: 3rem;
+  }
+  .inputForm{
+    width: 20rem;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 1rem;  
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 1rem;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 330px){
+  .headTitle{
+    font-size: 2.8rem;
+    margin-top: 7rem;
+  }
+  .inputForm{
+    width: 18rem;
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 0.9rem;  
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 0.9rem;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 0.9rem;
+  }
+}

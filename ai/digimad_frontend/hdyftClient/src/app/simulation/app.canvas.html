@@ -1,0 +1,32 @@
+<div class="card mt-3 simCard">
+  <h5 class="card-header">Simulation</h5>
+  <div #errorElement hidden class="container error">
+    <p>An error occurred while retrieving the data. Sorry for the inconvenience. Please try again.</p>
+    <button class="btn btn-outline-success" (click)="fetchAllEmotionsAndColors()">Try again</button>
+  </div>
+  <div #simulationElement class="container simContainer">
+    <div class="row">
+      <div class="col">
+        <div id="simulationRoom">
+          <canvas id="firstLamp" class="simulationLamp"
+            [@colorbackground]="{value: state, params: {firstColor: colorOne, secondColor: colorTwo, thirdColor: colorThree}}"
+            (@colorbackground.done)="toggleAnimation()"></canvas>
+          <canvas id="secondLamp" class="simulationLamp"
+            [@colorbackground]="{value: state, params: {firstColor: colorOne, secondColor: colorTwo, thirdColor: colorThree}}"></canvas>
+          <canvas id="thirdLamp" class="simulationLamp"
+            [@colorbackground]="{value: state, params: {firstColor: colorOne, secondColor: colorTwo, thirdColor: colorThree}}"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="!interactive">
+      <div class="col">
+        <div class="allEmotionsDiv">
+          <div class="emotionDiv" *ngFor="let emotion of emotions; let i = index">
+            <div class="emotionWord" (click)="lampChange($event.target.id)" id="{{emotion.name}}">
+              {{emotion.name}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

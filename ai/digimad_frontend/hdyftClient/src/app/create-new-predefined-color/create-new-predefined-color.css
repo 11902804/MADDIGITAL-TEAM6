@@ -1,0 +1,12 @@
+.newColorDiv .newColorForm{
+    width: 50%;
+    margin:auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+
+
+}
+
+.colorDiv{
+    border: 1px solid gray;
+}

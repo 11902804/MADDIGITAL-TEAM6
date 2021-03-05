@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+/* .bodyCard {
+  padding: 0;
+} */
+/* .simCard{
+  width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.simContainer {
+  height: fit-content;
+  padding: 1rem;
+  margin-top: 8px;
+}
+.simulationLamp {
+  position: relative;
+  width: 24px;
+  margin-right: 5%;
+  height: 24px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, inset #c9c9c3 0 -1px 9px,
+    rgb(207, 207, 207) 0 2px 12px;
+}
+
+#firstLamp {
+  top: 20%;
+  left: 15%;
+}
+
+#secondLamp {
+  top: 20%;
+  left: 40%;
+}
+
+#thirdLamp {
+  top: 20%;
+  left: 65%;
+}
+.row {
+  width: 100%;
+}
+#simulationRoom {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  height: 6rem;
+}
+.simCard {
+  width: auto;
+}
+.allEmotionsDiv {
+  border: 1px solid #098041;
+  border-radius: 5px;
+}
+.emotionDiv {
+  background-color: #8bc249;
+  height: calc(25rem / 7);
+  padding-left: 1rem;
+  padding-top: 0.7rem;
+  border: 1px solid #098041;
+  color: #098041;
+  font-size: 1.25rem;
+}
+
+.emotionWord {
+  cursor: pointer;
+}
+.inputColors {
+  float: left;
+}
+
+h5 {
+  font-size: 1.25rem;
+  color: #8bc249;
+}
+
+.error {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 991px) {
+  #firstLamp {
+    top: 20%;
+    left: 10%;
+  }
+
+  #secondLamp {
+    top: 20%;
+    left: 35%;
+  }
+
+  #thirdLamp {
+    top: 20%;
+    left: 60%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .emotionDiv {
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #firstLamp {
+    top: 20%;
+    left: 10%;
+  }
+
+  #secondLamp {
+    top: 20%;
+    left: 25%;
+  }
+
+  #thirdLamp {
+    top: 20%;
+    left: 40%;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .emotionDiv {
+    font-size: 1.25rem;
+    padding-left: 1rem;
+  }
+}

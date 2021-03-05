@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+.colorDiv {
+  width: 7rem;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.td {
+  border: 1px solid #8bc249;
+}
+
+table {
+  width: 50rem;
+  margin-left: auto;
+}
+.colorsCard {
+  width: 60rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+h5 {
+  font-size: 1.25rem;
+  color: #8bc249;
+}
+thead {
+  background-color: #8bc249;
+  color: #098041;
+  font-size: 1rem;
+}
+.th {
+  padding: 10px;
+  /* border: 1px solid#098041; */
+}
+.colorNameInput,
+h6 {
+  text-transform: capitalize;
+  color: #098041;
+  width: 9rem;
+}
+.saveButton {
+  margin-left: 1rem;
+  margin-top: 1rem;
+  border-radius: 25px;
+}
+.deleteButton {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  border-radius: 25px;
+}
+@media only screen and (max-width: 1050px) {
+  .colorsCard {
+    width: 50rem;
+  }
+  table {
+    width: 40rem;
+  }
+  .saveButton {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 25px;
+  }
+  .deleteButton {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    border-radius: 25px;
+  }
+}
+@media only screen and (max-width: 993px) {
+  .colorsCard {
+    width: 45rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  table {
+    width: 35rem;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .colorsCard {
+    width: 35rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  table {
+    width: 25rem;
+  }
+  h6 {
+    width: 4.9rem;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .colorsCard {
+    width: 30rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  table {
+    width: 20rem;
+  }
+  .colorDiv {
+    width: 4rem;
+  }
+  h6 {
+    width: 4.9rem;
+  }
+  .colorNameInput {
+    width: 6rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .colorsCard {
+    width: 22rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  table {
+    width: 9rem;
+  }
+  .colorDiv {
+    width: 3rem;
+  }
+  .saveButton {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+  .deleteButton {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+  }
+  h6 {
+    width: 4rem;
+    font-size: 0.8rem;
+  }
+  .colorNameInput {
+    width: 4rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* top-left border-radius */
+table tr:first-child th:first-child {
+  border-top-left-radius: 6px;
+}
+/* top-right border-radius */
+table tr:first-child th:last-child {
+  border-top-right-radius: 6px;
+}
+/* bottom-left border-radius */
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 6px;
+}
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 6px;
+}

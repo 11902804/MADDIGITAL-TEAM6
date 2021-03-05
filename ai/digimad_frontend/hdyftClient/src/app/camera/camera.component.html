@@ -1,0 +1,22 @@
+<div class="card mt-3">
+  <h5 class="card-header">Camera</h5>
+
+  <div #cameraStatusElement class="status" title="{{ cameraStatusMessage }}">
+    <span
+      class="dot"
+      [ngStyle]="{ 'background-color': cameraStatus ? '#23d616' : '#b82b16' }"
+    ></span>
+    <span class="title">Camera status</span>
+  </div>
+  <p>Emotion: {{ detectedEmotion }}</p>
+  <!-- Shows live video in browser (live feed from camera) -->
+  <video #videoElement hidden playsinline></video>
+  <!-- Shows one frame of the live feed -->
+  <!-- Canvas is used to extract frame frome live feed and emits it to the backend -->
+  <canvas #canvasElement hidden></canvas>
+  <!-- Error shown when camera is not accessible -->
+  <div #errorElement class="error">
+    <p>{{ cameraStatusMessage }}</p>
+    <p class="recoverymessage">{{ recoveryMessage }}</p>
+  </div>
+</div>
