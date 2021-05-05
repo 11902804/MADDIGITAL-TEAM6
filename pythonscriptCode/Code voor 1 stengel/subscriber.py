@@ -4,8 +4,8 @@ import paho.mqtt.publish as publish
 import time
 
 
-MQTT_TOPIC = [("0,1",0),("testje",0)]
-broker_address = "87.67.251.101"
+MQTT_TOPIC = [("Team4",0),("AI",0)]
+broker_address = "192.168.0.150"
 broker_port    = 1883
 #######################################
 def on_message(client, userdata, message):

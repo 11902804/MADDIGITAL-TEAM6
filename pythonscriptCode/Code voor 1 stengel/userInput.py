@@ -90,7 +90,7 @@ def on_message(client, userdata, message):
         topic_ai = 1
         string_ai = str(message.payload.decode("utf-8"))
         geparsde_data_ai = string_ai.split(';')
-        #input_locatie()
+        input_locatie()
 
         if (geparsde_data_ai[0] == '1'):
             persoon0id = geparsde_data_ai[0]
@@ -102,7 +102,7 @@ def on_message(client, userdata, message):
             print("RGBW2= ",persoon0RGB2)
             print("RGBW3= ",persoon0RGB3)
 
-    if(message.topic == "Team4"):
+    '''if(message.topic == "Team4"):
         topic_team4 = 1
         string_team4 = str(message.payload.decode("utf-8"))
         geparsde_data_team4 = string_team4.split(';')
@@ -113,7 +113,7 @@ def on_message(client, userdata, message):
             persoon0Y = geparsde_data_team4[2]
             print("ID=",persoon0id)
             print("X-waarde pars",persoon0X)
-            print("Y-waarde pasr",persoon0Y)
+            print("Y-waarde pasr",persoon0Y)'''
 
     print("topics", topic_ai, topic_team4)
 
@@ -164,7 +164,7 @@ def on_message(client, userdata, message):
         hoekjeAlpha = '%.3f' % float(persoon0hoekAlpha)
         print("Hoek theta= ", hoekjeTheta)
         print("Hoek alpha= ", hoekjeAlpha)
-        mode = 2
+        mode = 3
         freq = 500 #Hz
         x = 0
         y = 1
