@@ -1,3 +1,3 @@
-# PsocCode
+# AI
 
-Contains the Psoc code used in the Zerynth studio.
+Contains the AI code used for the emotion recognition. 
