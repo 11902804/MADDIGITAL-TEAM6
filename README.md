@@ -4,17 +4,17 @@
 
 To check out the designs in Autocad, visit [pythonscriptCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/pythonscriptCode).
 
-## Code
+## AI
 
-For all the code for controlling the motors and LEDs, visit [Code](https://github.com/ThomasAdons/PEN_Digimad_Hardware/tree/main/Code).
+For all the code for controlling the motors and LEDs, visit [AI](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/ai).
 
-## Documentation
+## PSoC code
 
-To check out the docs, visit [Documentation](https://github.com/ThomasAdons/PEN_Digimad_Hardware/tree/main/Documentation).
+To check out the docs, visit [PsocCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/PsocCode).
 
-## Research_Tests
+## FinalCode
 
-Information related to the test setups and test results are placed in the [Research_Tests](https://github.com/ThomasAdons/PEN_Digimad_Hardware/tree/main/Research_Tests) folder.
+Information related to the test setups and test results are placed in the [FinalCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/FinalCode) folder.
 
 ## People
 
