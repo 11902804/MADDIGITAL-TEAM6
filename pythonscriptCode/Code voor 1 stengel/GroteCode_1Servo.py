@@ -52,10 +52,6 @@ class persoon:
         self.hoekAlpha = hoekAlpha
         self.hoekTheta = hoekTheta
 
-
-
-
-
 def input_locatie():
     global topic_team4
     global persoon0X
