@@ -2,7 +2,7 @@
 
 ## Pythonscript code
 
-To check out the designs in Autocad, visit [pythonscriptCode](https://github.com/ThomasAdons/PEN_Digimad_Hardware/tree/main/3D_designs).
+To check out the designs in Autocad, visit [pythonscriptCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/pythonscriptCode).
 
 ## Code
 
