@@ -1,8 +1,8 @@
 # Project engineering
 
-## 3D_designs
+## Pythonscript code
 
-To check out the designs in Autocad, visit [3D_designs](https://github.com/ThomasAdons/PEN_Digimad_Hardware/tree/main/3D_designs).
+To check out the designs in Autocad, visit [pythonscriptCode](https://github.com/ThomasAdons/PEN_Digimad_Hardware/tree/main/3D_designs).
 
 ## Code
 
