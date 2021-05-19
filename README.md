@@ -14,7 +14,15 @@ To check out the code for the PSoC, visit [PsocCode](https://github.com/11902804
 
 ## FinalCode
 
-The final working code can be found here [FinalCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/FinalCode) folder.
+The final working code can be found here [FinalCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/FinalCode).
+
+## Documentation
+
+To check out the documentation, visit [PsocCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/PsocCode).
+
+## Video's
+
+To check out the demo video, visit [FinalCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/FinalCode).
 
 ## People
 
