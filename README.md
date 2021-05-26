@@ -18,11 +18,11 @@ The final working code can be found here [FinalCode](https://github.com/11902804
 
 ## Documentation
 
-To check out the documentation, visit [PsocCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/Documentation).
+To check out the documentation, visit [Documentation](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/Documentation).
 
 ## Video's
 
-To check out the demo video, visit [FinalCode](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/Video's).
+To check out the demo video, visit [Video's](https://github.com/11902804/MADDIGITAL-TEAM6/tree/main/Video's).
 
 ## People
 
